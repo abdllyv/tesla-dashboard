@@ -43,32 +43,17 @@ const ViewAllProduct = () => {
 
   /* ----------------------------- Remove Product ----------------------------- */
   const removeData = (dataId) => {
-   createRemoveAlert(
+    createRemoveAlert(
       "Remove Item",
       "Are you sure you want to remove this item from your cart?",
       "Yes, Remove",
       () => {
         const updatedCart = data.filter((item) => item.id !== dataId);
         axios
-        .delete(`${process.env.REACT_APP_ALL_PRODUCT}/${dataId}`)
-        .then((res) => console.log(res.data))
-        .catch((err) => console.log(err));
+          .delete(`${process.env.REACT_APP_ALL_PRODUCT}/${dataId}`)
+          .then((res) => console.log(res.data))
+          .catch((err) => console.log(err));
         setData(updatedCart);
-      }
-    );
-  };
-  /* ----------------------------- Remove All Product ----------------------------- */
-  const removeAllData = () => {
-    createRemoveAlert(
-      "Remove Item",
-      "Are you sure you want to remove All Product from your cart?",
-      "Yes, Remove",
-      () => {
-         axios
-        .delete(process.env.REACT_APP_ALL_PRODUCT)
-        .then((res) => console.log(res.data))
-        .catch((err) => console.log(err));
-        setData([]);
       }
     );
   };
@@ -118,9 +103,6 @@ const ViewAllProduct = () => {
               ))}
             </tbody>
           </table>
-          <button className="btn" onClick={removeAllData}>
-            Remove All Data
-          </button>
         </div>
       </div>
     </section>

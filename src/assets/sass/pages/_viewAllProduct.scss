@@ -70,28 +70,6 @@
           }
         }
       }
-      .btn {
-        margin-top: 10px;
-        cursor: pointer;
-        color: #c4cfde;
-        padding: 16px 15px;
-        max-width: 300px;
-        border-radius: 6px;
-        background: linear-gradient(145deg, #1e2024, #23272b);
-        box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-        transition: 0.4s;
-        position: relative;
-        z-index: 1;
-        font-size: 14px;
-        font-weight: 500;
-        border: 0 none;
-        line-height: 22px;
-        transform: scale(1);
-        &:hover {
-          color: #ff014f;
-          transform: translateY(5px);
-        }
-      }
     }
   }
 }
