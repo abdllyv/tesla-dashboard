@@ -1,0 +1,26 @@
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+// Font
+
+// Reset Code
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s ease;
+}
+body {
+  background-color: #212428;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.row {
+  width: 100%;
+  display: flex;
+}

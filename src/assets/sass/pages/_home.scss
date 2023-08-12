@@ -1,0 +1,36 @@
+.home {
+  .row {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    .title {
+      font-size: 58px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #c4cfde;
+      margin-bottom: 50px;
+      span {
+        color: #ff014f;
+      }
+    }
+    .btn {
+      a {
+        color: #ff014f;
+        font-size: 13px;
+        padding: 17px 19px;
+        border-radius: 6px;
+        background-color: #1c1e21;
+        font-weight: 500;
+        transform: scale(1);
+        transition: all 0.4s;
+        display: inline-block;
+        &:hover {
+          color: #c4cfde;
+          transform: scale(1.1);    
+        }
+      }
+    }
+  }
+}

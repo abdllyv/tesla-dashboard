@@ -1,0 +1,13 @@
+// Reset code
+@import "./base";
+
+// Compnents
+@import "./components/header";
+@import "./components/loader";
+@import "./components/sweet-alert";
+
+
+// Pages
+@import "./pages/home";
+@import "./pages/create-edit-login";
+@import "./pages/viewAllProduct";
