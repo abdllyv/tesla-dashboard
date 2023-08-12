@@ -23,7 +23,12 @@ const CreateProduct = () => {
   const ProductSchema = object({
     name: string().required().trim(),
     details: string().required().trim(),
-    price: string().required().trim(),
+    price: string()
+    .required()
+    .trim()
+    .test("numeric", "Price must be a numeric value", (value) => {
+      return /^[0-9]+$/.test(value);
+    }),
     image: mixed().test("fileRequired", "photo is required", (value) => {
       if (value.length > 0) {
         return true;
